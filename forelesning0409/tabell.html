@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="nb">
+<meta charest ="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML tabell</title>
+    <!-- style cellene til td og th -->
+    <style>
+        td, th {
+            border: 1px solid #000;
+            padding: 1rem;
+            font-style: Arial, Helvetica, sans-serif;
+            text-align: left;
+        }
+    </style>
+
+<head>
+    <body>
+        <main>
+            <!-- Grunnleggende tabell, vi bygger radvis , den inneholder overskriften til raden-->
+             <!-- Vi bruker <thead> for å gkøre det sdemantiskt at det head eller hodet av tabellen.  -->
+             <table>
+                <thead>
+                <tr> 
+                    <th colspan="2"></th>
+                    <th>Navn</th>
+                    <th>Masse (Jorden = 1)</th>
+                    <th>Diameter</th>
+                    <th>Tetthet</th>
+                    <th>Tyngdekraft</th>
+                    <th>Antall måner</th>
+                </tr>
+                </thead>
+            <!-- den innholder data i radene under raden for eksempel merker kommer under Masse.. -->
+             <tbody>
+                <tr>
+                    <th rowspan="4" colspan="2">Terrestike planeter</th>
+                    <td>Merker</td>
+                    <td>0,055</td>
+                    <td>4879</td>
+                    <td>5,43</td>
+                    <td>3,70</td>
+                    <td>0</td>
+                </tr>
+
+                <!-- Vi lager en ny rad -->
+                 <tr>
+                    <td>Venus</td>
+                    <td>12 104</td>
+                    <td>0.815</td>
+                    <td>524</td>
+                    <td>8.87</td>
+                    <td>0</td>
+                 </tr>
+
+                 <tr>
+                    <td>Jorden</td>
+                    <td>12 756</td>
+                    <td>1</td>
+                    <td>5,51</td>
+                    <td>9,80</td>
+                    <td>1</td>
+                 </tr>
+
+                 <tr> 
+                    <td>Mars</td>
+                    <td>6792</td>
+                    <td>0,107</td>
+                    <td>3,93</td>
+                    <td>3,71</td>
+                    <td>2</td>
+                 </tr>
+
+                 <tr>
+                    <th rowspan="4">Jovianske planeter</th>
+                    <th colspan="2">Gas kjemper</th>
+                    <td>Jupiter</td>
+                    <td>142 984</td>
+                    <td>317,8</td>
+                    <td>1,33</td>
+                    <td>24,8</td>
+                    <td>80</td>
+                 </tr>
+
+                 <tr>
+                    <td>Satrun</td>
+                    <td>120 536</td>
+                    <td>95,1</td>
+                    <td>0,69</td>
+                    <td>10,4</td>
+                    <td>83</td>
+                </tr>
+
+                <tr>
+                    <th rowspan="2">Is kjemper</th>
+                    <td>Uranus</td>
+                    <td>51 118</td>
+                    <td>14,6</td>
+                    <td>1,27</td>
+                    <td>8,9</td>
+                    <td>27</td>
+                </tr>
+
+                <tr>
+                    <td>Neptun</td>
+                    <td>49 528</td>
+                    <td>17,2</td>
+                    <td>1,64</td>
+                    <td>11,1</td>
+                    <td>14</td>
+                </tr>
+
+                <tr>
+
+                    <th colspan="2">Dvergpplanet</th>
+                    <td>Pluto</td>
+                    <td>950</td>
+                    <td>0,0022</td>
+                    <td>2,0</td>
+                    <td>0,6</td>
+                    <td>5</td>
+                </tr>
+                </tbody>
+             </table>
+        </main>
+    </body>
+</head>
+
+
+
+
+
+</html>
